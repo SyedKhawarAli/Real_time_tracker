@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,6 @@
 				3AA71202ED2F1C1D70F8BCB6 /* Pods-Real time tracker.debug.xcconfig */,
 				4C17B8E896D5BCA72E56E23E /* Pods-Real time tracker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +80,39 @@
 		CE864C76264819080050E331 /* Real time tracker */ = {
 			isa = PBXGroup;
 			children = (
-				CE864C77264819080050E331 /* AppDelegate.swift */,
-				CE864C79264819080050E331 /* SceneDelegate.swift */,
-				CE864C7B264819080050E331 /* ViewController.swift */,
-				CE864C7D264819080050E331 /* Main.storyboard */,
-				CE864C80264819090050E331 /* Assets.xcassets */,
-				CE864C82264819090050E331 /* LaunchScreen.storyboard */,
 				CE864C85264819090050E331 /* Info.plist */,
+				CE864C9226481ACF0050E331 /* Storyboards */,
+				CE864C9826481B2C0050E331 /* Supporting Files */,
+				CE864C9326481AF20050E331 /* Views */,
 			);
 			path = "Real time tracker";
+			sourceTree = "<group>";
+		};
+		CE864C9226481ACF0050E331 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE864C82264819090050E331 /* LaunchScreen.storyboard */,
+				CE864C7D264819080050E331 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE864C9326481AF20050E331 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE864C7B264819080050E331 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE864C9826481B2C0050E331 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE864C77264819080050E331 /* AppDelegate.swift */,
+				CE864C80264819090050E331 /* Assets.xcassets */,
+				CE864C79264819080050E331 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 684T2E6SZR;
 				INFOPLIST_FILE = "Real time tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +403,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 684T2E6SZR;
 				INFOPLIST_FILE = "Real time tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
