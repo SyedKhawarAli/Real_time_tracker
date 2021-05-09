@@ -14,6 +14,9 @@
 		CE864C7F264819080050E331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE864C7D264819080050E331 /* Main.storyboard */; };
 		CE864C81264819090050E331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE864C80264819090050E331 /* Assets.xcassets */; };
 		CE864C84264819090050E331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE864C82264819090050E331 /* LaunchScreen.storyboard */; };
+		D9A1D1B5264823B800ACD409 /* LocationSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1D1B4264823B800ACD409 /* LocationSocketManager.swift */; };
+		D9A1D1B9264826DF00ACD409 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A1D1B8264826DF00ACD409 /* MapKit.framework */; };
+		D9A1D1BC2648315200ACD409 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1D1BB2648315200ACD409 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		CE864C80264819090050E331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE864C83264819090050E331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE864C85264819090050E331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9A1D1B4264823B800ACD409 /* LocationSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSocketManager.swift; sourceTree = "<group>"; };
+		D9A1D1B8264826DF00ACD409 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D9A1D1BB2648315200ACD409 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DD8737379D52E1F3CBABF353 /* Pods_Real_time_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Real_time_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A1D1B9264826DF00ACD409 /* MapKit.framework in Frameworks */,
 				82639A65E4D824AB7EBC9CE6 /* Pods_Real_time_tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +61,7 @@
 		BDF085FD15DF20B28069E880 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9A1D1B8264826DF00ACD409 /* MapKit.framework */,
 				DD8737379D52E1F3CBABF353 /* Pods_Real_time_tracker.framework */,
 			);
 			name = Frameworks;
@@ -80,6 +88,7 @@
 		CE864C76264819080050E331 /* Real time tracker */ = {
 			isa = PBXGroup;
 			children = (
+				D9A1D1B32648236B00ACD409 /* Managers */,
 				CE864C85264819090050E331 /* Info.plist */,
 				CE864C9226481ACF0050E331 /* Storyboards */,
 				CE864C9826481B2C0050E331 /* Supporting Files */,
@@ -101,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				CE864C7B264819080050E331 /* ViewController.swift */,
+				D9A1D1BB2648315200ACD409 /* MapViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +123,14 @@
 				CE864C79264819080050E331 /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9A1D1B32648236B00ACD409 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D9A1D1B4264823B800ACD409 /* LocationSocketManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +250,8 @@
 				CE864C7C264819080050E331 /* ViewController.swift in Sources */,
 				CE864C78264819080050E331 /* AppDelegate.swift in Sources */,
 				CE864C7A264819080050E331 /* SceneDelegate.swift in Sources */,
+				D9A1D1BC2648315200ACD409 /* MapViewController.swift in Sources */,
+				D9A1D1B5264823B800ACD409 /* LocationSocketManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
