@@ -12,7 +12,6 @@ class LocationSocketManager: NSObject {
 
     static let sharedInstance = LocationSocketManager()
 
-    private let url = URL(string: "https://tranquil-dawn-44938.herokuapp.com/")
     private var manager: SocketManager!
     private var socket: SocketIOClient!
     
